@@ -9,6 +9,7 @@ import javax.servlet.http.HttpServletRequest
 import groovy.util.logging.Commons
 
 beans {
+
 	cloudFactory(CloudFactory)
 	cloud(cloudFactory: "getCloud")
 }
@@ -33,6 +34,9 @@ class WebApplication implements CommandLineRunner {
 		model['memory'] = cloud.applicationInstanceInfo.properties['limits']['mem']
 		model['disk'] = cloud.applicationInstanceInfo.properties['limits']['disk']
 		model['requestsServed'] = requestsServed
+		def message = System.getenv('MESSAGE')
+		if (!message) message = "Hello World"
+		model['message'] = message
 		return "index"
 	}
 

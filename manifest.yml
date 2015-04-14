@@ -1,6 +1,6 @@
 ---
 applications:
-- name: cf-scale-boot
-  memory: 512M
+- name: cf-hello
+  memory: 256M
   instances: 1
-  host: cf-scale-boot-${random-word}
+  host: cf-hello-${random-word}

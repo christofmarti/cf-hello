@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Cloud Foundry Scale Demo</title>
+    <title>Cloud Foundry Hello World Demo</title>
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen"/>
 </head>
 <body>
 <div class="container">
     <div class="hero-unit">
-        <h1>Cloud Foundry Scale Demo</h1>
+        <h1>Cloud Foundry Hello World Demo</h1>
 
         <p>Powered by <a href="http://projects.spring.io/spring-boot">Spring Boot</a> and <a href="http://groovy.codehaus.org">Groovy</a>!</p>
     </div>
@@ -24,6 +24,7 @@
     	<tr><td><strong>Warden Container IP</strong></td><td th:text="${ipAddress}">42</td></tr>
     	<tr><td><strong>Warden Container Port</strong></td><td th:text="${port}">42</td></tr>
     	<tr class="info"><td><strong>Requests Serviced</strong></td><td th:text="${requestsServed}">42</td></tr>
+        <tr class="info"><td><strong>Message</strong></td><td th:text="${message}">Hello World</td></tr>
     </table>
 
     <p style="text-align: center"><img src="img/LOGO_CloudFoundry_Large.png"/></p>
