@@ -1,6 +1,6 @@
 ---
 applications:
 - name: cf-hello
-  memory: 256M
+  memory: 320M
   instances: 1
   host: cf-hello-${random-word}
